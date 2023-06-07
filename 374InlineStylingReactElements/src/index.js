@@ -1,9 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const customstyle = { 
+  color : "red" , 
+  fontSize : "20px" , 
+  border : "1px solid black"
+}
+
+customstyle.color = "blue";
 ReactDOM.render(
   <div>
-    <h1>My Favourite Foods</h1>
+    <h1 style={customstyle}>My Favourite Foods</h1>
     <ul>
       <li>köfte</li>
       <li>cola</li>
